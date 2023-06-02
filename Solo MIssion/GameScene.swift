@@ -7,7 +7,7 @@
 
 import SpriteKit
 import GameplayKit
-
+// prueba del funcionamiento de git hub
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
     let player = SKSpriteNode(imageNamed:"playerShip" /*"lovepik-space-shuttle-png-image_401191077_wh860 Background Removed"  */)
