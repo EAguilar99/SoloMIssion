@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "rayo-pistola-laser-dibujos-animados-rayos-arma-combate-alienigena-efecto-disparo-futurista-flujo-plasma-destructivo-explosion-ataque-blaster-bomba-elemento-juego-vectorial_93083-2971 Background Removed.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

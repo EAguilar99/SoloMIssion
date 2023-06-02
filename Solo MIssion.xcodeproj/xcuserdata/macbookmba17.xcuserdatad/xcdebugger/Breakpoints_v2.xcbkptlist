@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "32F6ED09-A8F7-4930-9817-4B349DD11F13"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Solo MIssion/GameScene.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "didBegin(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbd4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbd69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbdd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbdd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbdf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbc15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbe05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbe05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "444">
+               </Location>
+               <Location
+                  uuid = "13A82AC4-185D-4CFF-B9CC-C00A9D4DC988 - afa5e75e0fdcbe43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Solo_MIssion.GameScene.didBegin(__C.SKPhysicsContact) -&gt; ()"
+                  moduleName = "Solo MIssion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/Solo%20MIssion/Solo%20MIssion/GameScene.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
