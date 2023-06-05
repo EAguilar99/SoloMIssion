@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F94890B22A183037006CAE75 /* SnapSave.io - Sonido de pistola laser (128 kbps).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F94890B12A183037006CAE75 /* SnapSave.io - Sonido de pistola laser (128 kbps).mp3 */; };
+		F96AB4B02A2AB8C6006F5824 /* X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F96AB4AF2A2AB8C6006F5824 /* X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3 */; };
 		F98957422A12ED6300B03255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98957412A12ED6300B03255 /* AppDelegate.swift */; };
 		F98957442A12ED6300B03255 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F98957432A12ED6300B03255 /* GameScene.sks */; };
 		F98957462A12ED6300B03255 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F98957452A12ED6300B03255 /* Actions.sks */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F94890B12A183037006CAE75 /* SnapSave.io - Sonido de pistola laser (128 kbps).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "SnapSave.io - Sonido de pistola laser (128 kbps).mp3"; path = "MHAv2's Solo Mission Images/SnapSave.io - Sonido de pistola laser (128 kbps).mp3"; sourceTree = SOURCE_ROOT; };
+		F96AB4AF2A2AB8C6006F5824 /* X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3"; sourceTree = "<group>"; };
 		F989573E2A12ED6300B03255 /* Solo MIssion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solo MIssion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98957412A12ED6300B03255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F98957432A12ED6300B03255 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F98957472A12ED6300B03255 /* GameScene.swift */,
 				F98957492A12ED6300B03255 /* GameViewController.swift */,
 				F94890B12A183037006CAE75 /* SnapSave.io - Sonido de pistola laser (128 kbps).mp3 */,
+				F96AB4AF2A2AB8C6006F5824 /* X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3 */,
 				F989574B2A12ED6300B03255 /* Main.storyboard */,
 				F989574E2A12ED6400B03255 /* Assets.xcassets */,
 				F98957502A12ED6400B03255 /* LaunchScreen.storyboard */,
@@ -242,6 +245,7 @@
 				F98957442A12ED6300B03255 /* GameScene.sks in Resources */,
 				F94890B22A183037006CAE75 /* SnapSave.io - Sonido de pistola laser (128 kbps).mp3 in Resources */,
 				F989574F2A12ED6400B03255 /* Assets.xcassets in Resources */,
+				F96AB4B02A2AB8C6006F5824 /* X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps).mp3 in Resources */,
 				F98957522A12ED6400B03255 /* LaunchScreen.storyboard in Resources */,
 				F98957462A12ED6300B03255 /* Actions.sks in Resources */,
 			);

@@ -10,9 +10,10 @@ import GameplayKit
 // prueba del funcionamiento de git hub segunda pruebsa 
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
-    let player = SKSpriteNode(imageNamed:"playerShip" /*"lovepik-space-shuttle-png-image_401191077_wh860 Background Removed"  */)
+    let player = SKSpriteNode(imageNamed:"lovepik-space-shuttle-png-image_401191077_wh860 Background Removed"/*"playerShip"   */)
     
     let bulletSound = SKAction.playSoundFileNamed("SnapSave.io - Sonido de pistola laser (128 kbps)", waitForCompletion: false)
+    let explosionsound = SKAction.playSoundFileNamed("X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps)", waitForCompletion: false)
     
     struct PhysicsCategories
     {
@@ -73,8 +74,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         //player.physicsBody!.isDynamic = true// linea de prueba
         player.physicsBody!.affectedByGravity = false
         player.physicsBody!.categoryBitMask = PhysicsCategories.Player
-        player.physicsBody!.categoryBitMask = PhysicsCategories.None
-        player.physicsBody!.categoryBitMask = PhysicsCategories.Enemy
+        player.physicsBody!.collisionBitMask = PhysicsCategories.None
+        player.physicsBody!.contactTestBitMask = PhysicsCategories.Enemy
         self.addChild(player)
         StarNewLevel()
     }
@@ -97,23 +98,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             body1 = contact.bodyB
             body2 = contact.bodyA
         }
-        
-      /*
-        if body1.categoryBitMask == PhysicsCategories.Bullet && body2.categoryBitMask == PhysicsCategories.Enemy{ //remove the final condition from here
-          
-   //The following bit has changed
-
-               if body2.node != nil{
-                   if body2.node!.position.y > self.size.height{
-                       return //if the enemy is off the top of the screen, 'return'. This will stop running this code here, therefore doing nothing unless we hit the enemy when it's on the screen. As we are already checking that body2.node isn't nothing, we can safely unwrap (with '!)' this here.
-                   }
-                   /*else{
-                   spawnExplosion(spawnPosition: body2.node!.position)
-                   }*/
-               }
-
-   //changes end here
-       */
         
         if body1.categoryBitMask == PhysicsCategories.Player && body2.categoryBitMask == PhysicsCategories.Enemy{
                   
@@ -147,7 +131,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     
     func spawnExplosion(spawnPosition: CGPoint){
           
-          let explosion = SKSpriteNode (imageNamed:"Explosion")
+          let explosion = SKSpriteNode (imageNamed:"explosion")
           explosion.position = spawnPosition
           explosion.zPosition = 3
           explosion.setScale(0)
@@ -157,7 +141,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
           let fadeOut = SKAction.fadeOut(withDuration: 0.1)
           let delete = SKAction.removeFromParent()
           
-          let explosionSequence = SKAction.sequence([scaleIn,fadeOut,delete])
+        let explosionSequence = SKAction.sequence([explosionsound,scaleIn,fadeOut,delete])
           
           explosion.run(explosionSequence)
       }
@@ -183,8 +167,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         bullet.physicsBody = SKPhysicsBody(rectangleOf: bullet.size)
         bullet.physicsBody!.affectedByGravity = false
         bullet.physicsBody!.categoryBitMask = PhysicsCategories.Bullet
-        bullet.physicsBody?.categoryBitMask = PhysicsCategories.None
-        bullet.physicsBody?.categoryBitMask = PhysicsCategories.Enemy
+        bullet.physicsBody?.collisionBitMask = PhysicsCategories.None
+        bullet.physicsBody?.contactTestBitMask = PhysicsCategories.Enemy
         self.addChild(bullet)
         
         let moveBullet = SKAction.moveTo(y: self.size.height + bullet.size.height, duration: 1)
@@ -208,7 +192,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         enemy.physicsBody = SKPhysicsBody(rectangleOf: enemy.size)
         enemy.physicsBody!.affectedByGravity = false
         enemy.physicsBody!.categoryBitMask = PhysicsCategories.Enemy
-        enemy.physicsBody?.categoryBitMask = PhysicsCategories.None
+        enemy.physicsBody?.collisionBitMask = PhysicsCategories.None
         enemy.physicsBody?.contactTestBitMask = PhysicsCategories.Player | PhysicsCategories.Bullet
         self.addChild(enemy)
         
