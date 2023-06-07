@@ -7,13 +7,18 @@
 
 import SpriteKit
 import GameplayKit
-// prueba del funcionamiento de git hub segunda pruebsa 
+// prueba del funcionamiento de git hub segunda pruebsa
 
 class GameScene: SKScene, SKPhysicsContactDelegate{
-    let player = SKSpriteNode(imageNamed:"lovepik-space-shuttle-png-image_401191077_wh860 Background Removed"/*"playerShip"   */)
+    var gameScore = 0
+    let scorelabel = SKLabelNode(fontNamed: "The Bold Font")
+    var levelNumbre = 0
+    
+    let player = SKSpriteNode(imageNamed:"playerShip" /*"lovepik-space-shuttle-png-image_401191077_wh860 Background Removed"  */)
     
     let bulletSound = SKAction.playSoundFileNamed("SnapSave.io - Sonido de pistola laser (128 kbps)", waitForCompletion: false)
     let explosionsound = SKAction.playSoundFileNamed("X2Download.app - Explosion (juego arcade) - Efecto de sonido [Para descargar] (128 kbps)", waitForCompletion: false)
+      
     
     struct PhysicsCategories
     {
@@ -76,8 +81,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         player.physicsBody!.categoryBitMask = PhysicsCategories.Player
         player.physicsBody!.collisionBitMask = PhysicsCategories.None
         player.physicsBody!.contactTestBitMask = PhysicsCategories.Enemy
+    
         self.addChild(player)
+        
+        scorelabel.text =  "Score: 0"
+        scorelabel.fontSize = 70
+        scorelabel.fontColor = SKColor.white
+        scorelabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
+        scorelabel.position = CGPoint(x: self.size.width*0.15, y: self.size.height*0.9)
+        scorelabel.zPosition = 100
+        self.addChild(scorelabel)
+        
+        
+        
         StarNewLevel()
+    }
+    
+    func addScore()
+    {
+        gameScore += 1
+        scorelabel.text = "Score \(gameScore)"
+        
     }
     
     
@@ -99,6 +123,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
             body2 = contact.bodyA
         }
         
+      /*
+        if body1.categoryBitMask == PhysicsCategories.Bullet && body2.categoryBitMask == PhysicsCategories.Enemy{ //remove the final condition from here
+          
+   //The following bit has changed
+
+               if body2.node != nil{
+                   if body2.node!.position.y > self.size.height{
+                       return //if the enemy is off the top of the screen, 'return'. This will stop running this code here, therefore doing nothing unless we hit the enemy when it's on the screen. As we are already checking that body2.node isn't nothing, we can safely unwrap (with '!)' this here.
+                   }
+                   /*else{
+                   spawnExplosion(spawnPosition: body2.node!.position)
+                   }*/
+               }
+
+   //changes end here
+       */
+        
         if body1.categoryBitMask == PhysicsCategories.Player && body2.categoryBitMask == PhysicsCategories.Enemy{
                   
                   
@@ -118,6 +159,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
               
               if body1.categoryBitMask == PhysicsCategories.Bullet && body2.categoryBitMask == PhysicsCategories.Enemy && (body2.node?.position.y)! < self.size.height{
                   
+                  addScore()
                   if body2.node != nil{
                   spawnExplosion(spawnPosition: body2.node!.position)
                   }
@@ -141,7 +183,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
           let fadeOut = SKAction.fadeOut(withDuration: 0.1)
           let delete = SKAction.removeFromParent()
           
-        let explosionSequence = SKAction.sequence([explosionsound,scaleIn,fadeOut,delete])
+          let explosionSequence = SKAction.sequence([explosionsound,scaleIn,fadeOut,delete])
           
           explosion.run(explosionSequence)
       }
@@ -149,11 +191,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     //func star new level
     func StarNewLevel()
     {
+        levelNumbre += 1
         let spawn = SKAction.run(SpawnEnemy)
         let waitToSpaw = SKAction.wait(forDuration: 1)
-        let spawSequence = SKAction.sequence([spawn,waitToSpaw])
+        let spawSequence = SKAction.sequence([waitToSpaw,spawn])
         let spawnForever = SKAction.repeatForever(spawSequence)
-        self.run(spawnForever)
+        self.run(spawnForever, withKey: "")
     }
     
     
@@ -235,3 +278,4 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     }
     
 }
+
